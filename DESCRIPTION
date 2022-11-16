@@ -1,6 +1,6 @@
 Package: sdamr
 Title: Statistics: Data Analysis and Modelling
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
     person(given = "Maarten",
            family = "Speekenbrink",
@@ -21,14 +21,14 @@ License: GPL-3
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 URL: https://mspeekenbrink.github.io/sdam-r/
 Depends: R (>= 3.5.0)
 Imports: methods, stats, dplyr, ggplot2, grid, car
 NeedsCompilation: no
-Packaged: 2021-09-28 13:20:11 UTC; maarten
+Packaged: 2022-11-13 19:29:53 UTC; maarten
 Author: Maarten Speekenbrink [aut, cre]
     (<https://orcid.org/0000-0003-3221-1091>)
 Maintainer: Maarten Speekenbrink <m.speekenbrink@ucl.ac.uk>
 Repository: CRAN
-Date/Publication: 2021-09-29 08:20:02 UTC
+Date/Publication: 2022-11-16 21:50:03 UTC

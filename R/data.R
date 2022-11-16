@@ -67,7 +67,7 @@
 #'   \item{everest_feet}{judged height of Mount Everest in feet. Converted from meters if given in meters.}
 #'   \item{everest_meters}{judged height of Mount Everest in meters. Only contains values when judgment was actually given in meters.}
 #' }
-#' @source  \url{https://osf.io/pqf9r/}. See also Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Jr., Bahník, Š., Bernstein, M. J., . . ., Nosek, B. A. (2014). Investigating variation in replicability: A "many labs" replication project. Social Psychology, 45(3), 142-152. \doi{10.1027/1864-9335/a000178}
+#' @source  \url{https://osf.io/pqf9r/}. See also Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R. B., Jr., Bahník, S., Bernstein, M. J., . . ., Nosek, B. A. (2014). Investigating variation in replicability: A "many labs" replication project. Social Psychology, 45(3), 142-152. \doi{10.1027/1864-9335/a000178}
 "anchoring"
 
 #' Trump votes in 2016 for 50 US states and the District of Columbia
@@ -83,7 +83,7 @@
 #'   \item{percent_in_poverty}{Percentage of citizens below the poverty threshold}
 #'   \item{percent_Trump_votes}{Percentage of votes for Trump in the 2016 elections}
 #' }
-#' @source CSI Without Dead Bodies "Hate Groups and Trump's Vote%: Predictive effect present when education and poverty are considered" \url{https://www.csiwithoutdeadbodies.com/2017/02/hate-groups-and-trumps-vote-predictive.html}
+#' @source CSI Without Dead Bodies "Hate Groups and Trump's Vote%: Predictive effect present when education and poverty are considered" \url{https://web.archive.org/web/20210414051437/https://www.csiwithoutdeadbodies.com/2017/02/hate-groups-and-trumps-vote-predictive.html}
 "trump2016"
 
 #' Legacy motives and pro-environmental behaviour
@@ -261,3 +261,69 @@
 #' }
 #' @source  \url{https://osf.io/je5u7/}. Carragher, D.J., Thomas, N.A., Gwinn, O.S. et al. (2019) Limited evidence of hierarchical encoding in the cheerleader effect. Scientific Reports, 9, 9329 \doi{10.1038/s41598-019-45789-6}.
 "cheerleader"
+
+#` Metacognition
+#' 
+#' Data from Rausch, M. & Zehetleitner, M. (2016) Visibility is not equivalent to confidence in a low contrast orientation discrimination task. Frontiers in Psychology, 7, p. 591 \doi{10.3389/fpsyg.2016.00591}
+#' 
+#' \@format A data frame with 7560 observations of 10 variables:
+#' \describe{
+#'    \item{id}{(factor) Participant ID}
+#'    \item{age}{(numeric) Participant age in years}
+#'    \item{sex}{(factor) Participant sex (male or female)}
+#'    \item{block}{(numeric) number of the test block (from 1 to 9). Practice block is excluded.}
+#'    \item{trial}{(numeric) number of trial (between 1 and 42) within a block.}
+#'    \item{tilt}{(numeric) whether grating is horizontal (0) or vertical (90)}
+#'    \item{contrast}{(numeric) contrast of grating shown}
+#'    \item{correct}{(numeric) Whether identified title was correct (1) or not (0)}
+#'    \item{visibility}{(numeric) Rated visibility of the stimulus, on a scale between 0 () and 100 ()}
+#'    \item{confidence}{(numeric) Rated confidence in tilt identification, on a scale between 0 () and 100 ()}
+#' }
+#' @source  \url{https://osf.io/vk6fe/}. Rausch, M. & Zehetleitner, M. (2016) Visibility is not equivalent to confidence in a low contrast orientation discrimination task. Frontiers in Psychology, 7, p. 591 \doi{10.3389/fpsyg.2016.00591}.
+"metacognition"
+
+#` Gestures
+#' 
+#' Data from Winter, B., & Burkner, P. (2021) Poisson regression for linguists: A tutorial introduction to modelling count data with brms. Language and Linguistics Compass, 15, e12439 \doi{10.1111/lnc3.12439}
+#' 
+#' \@format A data frame with 54 observations of 6 variables:
+#' \describe{
+#'    \item{ID}{(factor) Participant ID}
+#'    \item{context}{(factor) Whether talking to a friend or professor}
+#'    \item{duration}{(numeric) Duration of the interaction}
+#'    \item{language}{(factor) Language spoken: Catalan or Korean}
+#'    \item{gender}{(factor) Participant gender (M = male, F = female)}
+#'    \item{gestures}{(numeric) number of gestures in the interaction.}
+#' }
+#' @source  \url{https://osf.io/6j8kc}.
+"gestures"
+
+#` Newspapers and votes in the 2017 UK election
+#' 
+#' Data based on a post-election survey by YouGov (see \url{https://yougov.co.uk/topics/politics/articles-reports/2017/06/13/how-britain-voted-2017-general-election}). Note that the data was recreated by combining frequency and percentage results reported in \url{https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/smo1w49ph1/InternalResults_170613_2017Election_Demographics_W.pdf}. Due to rounding and other potential inconsistencies, this data set will likely differ from the actual results.
+#' 
+#' \@format A data frame with 90 observations of 3 variables:
+#' \describe{
+#'    \item{newspaper}{(factor) Reported newspaper read most often}
+#'    \item{vote}{(factor) Which party voted on (including "did not vote")}
+#'    \item{n}{(numeric) Number of people in the survey who responded with that combination of newspaper and vote}
+#' }
+#' @source  \url{https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/smo1w49ph1/InternalResults_170613_2017Election_Demographics_W.pdf}.
+"papervotes"
+
+
+#` Rock-Paper-Scissors
+#' 
+#' Data from Experiment 1 in Guennouni, I., Speekenbrink, M. (2022). Transfer of learned opponent models in repeated games. Computational Brain and Behaviour, 5, 326–342 \doi{10.1007/s42113-022-00133-6}. Participants (n=52) each play 50 rounds of Rock-Paper-Scissors against an AI player who either adopts a "level-1" or "level-2" strategy. A level-1 strategy assumes the opponent will repeat their last action, and chooses the action that beats this. A level-2 strategy assumes the opponent adopts a level-1 strategy, and chooses the action that beats this. On 10% of rounds, the AI players pick a random action. On the remainder, they act according to their strategy.
+#' 
+#' \@format A data frame with 2600 observations of 6 variables:
+#' \describe{
+#'    \item{id}{(factor) Participant ID}
+#'    \item{ai_strategy}{(factor) Strategy adopted by AI player}
+#'    \item{round}{(numeric) Round number (between 1 and 50)}
+#'    \item{human_action}{(factor) Action taken by human (rock, paper, or scissors)}
+#'    \item{ai_action}{(factor) Action taken by AI (rock, paper, or scissors)}
+#'    \item{score}{(numeric) Outcome for human player, where 1 indicates a win, -1 a loss, and 0 a tie}
+#' }
+#' @source  Guennouni, I., Speekenbrink, M. (2022). Transfer of learned opponent models in repeated games. Computational Brain and Behaviour, 5, 326–342. \doi{10.1007/s42113-022-00133-6}
+"rps"
